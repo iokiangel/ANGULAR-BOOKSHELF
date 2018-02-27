@@ -1,0 +1,14 @@
+#content {
+  padding-top: 1em;
+  text-align: center;
+}
+
+#pageTitle {
+  color: #C70039;
+  font-family: Arial, sans-serif, "Times New Roman";
+  font-weight: bold;
+}
+
+.midFit {
+  width: 500px;
+}
