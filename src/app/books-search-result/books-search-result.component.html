@@ -1,11 +1,5 @@
-<table class="table table-bordered table-light table-hover">
-  <tbody>
-    <!-- Where our component is adding our search data -->
-    <!-- couldn't get ng-repeat working. May take another look at it another time -->
-    <tr *ngFor="let book of books">
-      <td>
-        {{book.volumeInfo.title}}
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div>
+
+  <img *ngFor="let book of books"  src="{{book.volumeInfo.imageLinks.smallThumbnail}}" style="align: bottom;" (click)="addToBookshelf(book)" />
+
+</div>

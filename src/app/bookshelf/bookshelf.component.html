@@ -1,3 +1,6 @@
-<p>
-  bookshelf works!
-</p>
+<div *ngIf="bookshelf.length != 0">
+  <button type="button" class="btn btn-primary" (click)="sortBookshelf()" >Sort</button>
+</div>
+<div>
+  <img *ngFor="let book of bookshelf" src="{{book.volumeInfo.imageLinks.smallThumbnail}}" (click)="removeBook(book)" />
+</div>
