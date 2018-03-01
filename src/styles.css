@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
 body {
-  background-image: url("images/background.jpeg");
+  /* FORGOT TO ADD MAERIALIZE TO INITIAL PROJECT -- hopefully this is okay now  */
+  /* background-image: url("images/background.jpeg"); */
 }
