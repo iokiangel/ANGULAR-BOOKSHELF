@@ -1,6 +1,9 @@
-<div *ngIf="bookshelf.length != 0">
-  <button type="button" class="btn btn-outline-secondary" (click)="sortBookshelf()" >Sort</button>
+<div class="div-container">
+  <button type="button" class="btn btn-outline-secondary btn-sort" (click)="sortBookshelf()" >Sort</button>
+  <h2>My Bookshelves</h2>
 </div>
-<div>
-  <img *ngFor="let book of bookshelf" src="{{book.volumeInfo.imageLinks.smallThumbnail}}" (click)="removeBook(book)" />
+<div *ngIf="bookshelf.length != 0" class="bookshelf--frame">
+    <div class="book-wrapper" *ngFor="let book of bookshelf">
+      <img src="{{book.volumeInfo.imageLinks.smallThumbnail}}" (click)="removeBook(book)" />
+    </div>
 </div>

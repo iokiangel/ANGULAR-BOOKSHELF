@@ -1,5 +1,8 @@
-<div>
-
-  <img *ngFor="let book of books"  src="{{book.volumeInfo.imageLinks.smallThumbnail}}" style="align: bottom;" (click)="addToBookshelf(book)" />
-
+<div class="div-container">
+  <h2>Library</h2>
+</div>
+<div class="bookshelf--frame" *ngIf="books.length != 0">
+  <div class="book-wrapper" *ngFor="let book of books">
+    <img src="{{book.volumeInfo.imageLinks.smallThumbnail}}" (click)="addToBookshelf(book)" />
+  </div>
 </div>

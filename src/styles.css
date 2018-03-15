@@ -1,6 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
-body {
-  /* FORGOT TO ADD MAERIALIZE TO INITIAL PROJECT -- hopefully this is okay now  */
-  /* background-image: url("images/background.jpeg"); */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Pacifico|Patua+One');
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url("images/library.jpg") no-repeat;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+/* The overlay acts as a buffer between the content and background image */
+.overlay{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: table;
+  top: 0;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.intro .overlay .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.content h1 {
+  font-family: 'Pacifico', 'sans-serif';
+  color: #F9F3F4;
+  text-shadow: 0px 0px 300px #000;
+  font-size: 500%;
+}
+.content .btn {
+  border: solid #B5A642 3px;
+  border-radius: 9px;
+  font-family: 'Dancing Script', 'sans-serif';
+  color: #B5A642;
+  font-size: 135%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.content .btn:hover {
+  color: #fff;
+  border: solid #fff 3px;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url("images/lightBrown.png") no-repeat;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+.main .btn {
+  border: solid #B5A642 3px;
+  border-radius: 9px;
+  font-family: 'Dancing Script', 'sans-serif';
+  color: #B5A642;
+  font-size: 135%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.main .btn:hover {
+  color: #fff;
+  border: solid #fff 3px;
+}
+.main .input-text {
+  font-family: 'Patua One', 'sans-serif';
+}
+.div-container {
+  height: 75px;
 }

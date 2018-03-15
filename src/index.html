@@ -1,12 +1,25 @@
 <!doctype html>
 <html>
 <head>
-  <title>Angular Bookshelf</title>
+  <title>Marrick Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
 </head>
-<body ng-app="myApp" class="mat-app-background">
-  <app-root>
-  </app-root>
+<body ng-app="myApp">
+  <section class="intro">
+    <div class="overlay">
+      <div class="inner">
+        <div class="content">
+          <h1>The Marrick Library</h1>
+          <a class="btn" href="#main" rel="" id="getStarted">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main" id="main">
+    <app-root>
+    </app-root>
+  </section>
 </body>
 
 </html>

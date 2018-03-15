@@ -1,5 +1,5 @@
 <div class="input-group">
-  <input  type="text" class="form-control" (keyup.enter)="searchBook(bookTitle.value)"
+  <input  type="text" class="input-text form-control" (keyup.enter)="searchBook(bookTitle.value)"
    placeholder="Book Title" aria-label="Book Title" aria-describedby="basic-addon2" id="bookTitle" #bookTitle>
   <div class="input-group-append">
     <button (click)="searchBook(bookTitle.value)" class="btn btn-outline-secondary" type="button">Search</button>

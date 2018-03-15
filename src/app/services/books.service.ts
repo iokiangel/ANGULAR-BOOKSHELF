@@ -28,7 +28,7 @@ export class BooksService {
   }
   //adds to bookshelf
   addToBookshelf(data){
-    this.bookshelf.push(data);
+    this.bookshelf.unshift(data);
     //console.log(this.bookshelf);
     this.bookshelfComponentMethodCallSource.next();
   }
